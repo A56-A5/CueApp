@@ -29,10 +29,12 @@ Cue App is a lightweight, stylish utility designed to **instantly launch groups 
    pip install -r requirements.txt
    python cue_app.py
    ```
-3. **Build App**
-    ```bash
+
+##  Build App
+   ```bash
    .\build.bat
    ```
+   (run the application in dist folder after building)
 
 ---
 
