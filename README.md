@@ -6,7 +6,7 @@ Cue App is a lightweight, stylish utility designed to **instantly launch groups 
 ![add](images/add.png)
 
 
-<img src="images/view.png" width="50%" /> <img src="images/modify_delete.png" width="50%" />
+<img src="images/view.png" width="40%" /> <img src="images/modify_delete.png" width="40%" />
 <img src="images/add.png" width="50%" />
 
 <table>
