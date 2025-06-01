@@ -2,9 +2,8 @@
 
 Cue App is a lightweight, stylish utility designed to **instantly launch groups of programs or URLs** using simple custom-named cues (modes). Whether you're starting a "focus" mode, a "drawing" mode, or a "gaming" mode, Cue App lets you configure and trigger all the required tools with a single click.
 
-<img src="images/view.png" width="100" />
-<img src="images/modify_delete.png" width="100" />
-<img src="images/add" width="100" />
+![img1](images/view.png) ![img2](images/modify_delete.png) ![img3](images/add.png)
+
 ---
 
 ## 🚀 Features
