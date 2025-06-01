@@ -27,6 +27,7 @@ Cue App is a lightweight, stylish utility designed to **instantly launch groups 
 2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
+   python cue_app.py
    ```
 3. **Build App**
     ```bash
