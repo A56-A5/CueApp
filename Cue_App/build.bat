@@ -6,7 +6,7 @@ pyinstaller ^
     --name "CueApp" ^
     --onefile ^
     --noconsole ^
-    --icon=icon.ico ^
+    --icon=logo.ico ^
     cue_app.py
 
 echo Build complete.
