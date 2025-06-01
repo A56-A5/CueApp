@@ -1,0 +1,16 @@
+{
+    "art mode": [
+        "\"C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Krita\\Krita.lnk\"",
+        "\"C:\\Users\\alviv\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Blender\\Blender 4.3.lnk\"",
+        "\"C:\\Users\\alviv\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Spotify.lnk\"",
+        "https://in.pinterest.com"
+    ],
+    "game mode": [
+        "\"C:\\Users\\alviv\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Steam\\Steam.lnk\"",
+        "\"C:\\Users\\alviv\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Spotify.lnk\""
+    ],
+    "code mode": [
+        "\"C:\\Users\\alviv\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code\\Visual Studio Code.lnk\"",
+        "\"C:\\Users\\alviv\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Cursor\\Cursor.lnk\""
+    ]
+}
