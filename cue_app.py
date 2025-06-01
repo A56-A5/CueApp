@@ -7,6 +7,7 @@ from PyQt6.QtWidgets import (
     QApplication, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QLabel,
     QTabWidget, QTextEdit, QLineEdit, QListWidget, QMessageBox, QFrame
 )
+from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt, QPoint
 
 PROGRAMS_FILE = 'programs.json'
@@ -40,13 +41,15 @@ class FramelessWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowFlag(Qt.WindowType.FramelessWindowHint)
-        self.setWindowTitle("Cue App - Mac OS Style Frameless Window")
+        self.setWindowTitle("Cue App")
         self.resize(700, 550)
         self.setStyleSheet("background-color: #121212; color: white;")
+        self.setWindowIcon(QIcon("logo.ico"))
+        self.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.Window)
+
 
         self.old_pos = None
 
-        # Title bar with mac style buttons
         self.title_bar = QFrame(self)
         self.title_bar.setFixedHeight(30)
         self.title_bar.setStyleSheet("background-color: #1c1c1e;")
@@ -75,7 +78,6 @@ class FramelessWindow(QWidget):
         h_layout.addStretch()
         self.title_bar.setLayout(h_layout)
 
-        # Tabs widget
         self.tabs = QTabWidget(self)
         self.tabs.setStyleSheet("""
             QTabWidget::pane { border: 0; }
@@ -94,7 +96,6 @@ class FramelessWindow(QWidget):
 
         self.create_tabs()
 
-        # Main layout
         v_layout = QVBoxLayout(self)
         v_layout.setContentsMargins(0,0,0,0)
         v_layout.setSpacing(0)
@@ -129,22 +130,18 @@ class FramelessWindow(QWidget):
     def create_tabs(self):
         self.programs = load_programs()
 
-        # Activate Tab
         self.activate_tab = QWidget()
         self.tabs.addTab(self.activate_tab, "Activate")
         self.create_activate_tab()
 
-        # Add New Tab
         self.add_tab = QWidget()
         self.tabs.addTab(self.add_tab, "Add New")
         self.create_add_tab()
 
-        # View All Tab
         self.view_tab = QWidget()
         self.tabs.addTab(self.view_tab, "View All")
         self.create_view_tab()
 
-        # Modify/Delete Tab
         self.modify_tab = QWidget()
         self.tabs.addTab(self.modify_tab, "Modify/Delete")
         self.create_modify_tab()
@@ -345,6 +342,9 @@ class FramelessWindow(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon("logo.ico"))
     window = FramelessWindow()
+    window.setWindowIcon(QIcon("logo.ico"))
     window.show()
+
     sys.exit(app.exec())
