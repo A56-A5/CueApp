@@ -2,7 +2,7 @@
 
 Cue App is a lightweight, stylish utility designed to **instantly launch groups of programs or URLs** using simple custom-named cues (modes). Whether you're starting a "focus" mode, a "drawing" mode, or a "gaming" mode, Cue App lets you configure and trigger all the required tools with a single click.
 
-![Cue App Screenshot](images/sample_screenshot.png)
+![Cue App Screenshot](images/sample.png)
 
 ---
 
@@ -19,6 +19,20 @@ Cue App is a lightweight, stylish utility designed to **instantly launch groups 
 
 ## 📂 Usage
 
-1. **Launch the app**:
+1. **Clone repo**:
    ```bash
-   python cue_app.py
+   git clone https://github.com/A56-A5/CueApp
+   cd CueApp/Cue_App
+   ```
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Build App**
+    ```bash
+   .\build.bat
+   ```
+
+---
+
+MIT License — free to use and modify.
